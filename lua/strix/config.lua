@@ -10,7 +10,7 @@ M.defaults = {
   styles = {
     comments = { italic = true },
     keywords = { italic = true },
-    fucntions = {},
+    functions = {},
     variables = {},
   },
 }
