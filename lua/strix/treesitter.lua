@@ -29,11 +29,11 @@ function M.get_highlights(colors, config)
   highlights["@diff.plus"] = { fg = colors.git.add }
 
   highlights["@function"] = { fg = colors.blue, style = config.styles.functions.style or "NONE" }
-  highlights["@function.builtin"] = { fg = colors.blue, style = "bold" }
+  highlights["@function.builtin"] = { fg = colors.blue1, style = "bold" }
   highlights["@function.call"] = { fg = colors.blue }
   highlights["@function.macro"] = { fg = colors.cyan }
-  highlights["@function.method"] = { fg = colors.blue }
-  highlights["@function.method.call"] = { fg = colors.blue }
+  highlights["@function.method"] = { fg = colors.green }
+  highlights["@function.method.call"] = { fg = colors.green }
 
   local italic_keywords = config.styles.keywords.italic and "italic" or "NONE"
   highlights["@keyword"] = { fg = colors.purple }
@@ -86,8 +86,8 @@ function M.get_highlights(colors, config)
 
   highlights["@property"] = { fg = colors.fg }
 
-  highlights["@punctuation.bracket"] = { fg = colors.fg_dark }
-  highlights["@punctuation.delimiter"] = { fg = colors.fg_dark }
+  highlights["@punctuation.bracket"] = { fg = colors.yellow }
+  highlights["@punctuation.delimiter"] = { fg = colors.red1 }
   highlights["@punctuation.special"] = { fg = colors.purple }
   highlights["@punctuation.special.markdown"] = { fg = colors.purple }
 
@@ -97,18 +97,19 @@ function M.get_highlights(colors, config)
   highlights["@string.regexp"] = { fg = colors.cyan }
 
   highlights["@tag"] = { fg = colors.red }
-  highlights["@tag.attribute"] = { fg = colors.blue }
+  highlights["@tag.attribute"] = { fg = colors.orange }
   highlights["@tag.delimiter"] = { fg = colors.fg_dark }
   highlights["@tag.delimiter.tsx"] = { fg = colors.fg_dark }
   highlights["@tag.tsx"] = { fg = colors.red }
+  highlights["@tag.builtin.tsx"] = { fg = colors.red, style = "bold" }
   highlights["@tag.javascript"] = { fg = colors.red }
 
   highlights["@type"] = { fg = colors.yellow }
-  highlights["@type.builtin"] = { fg = colors.yellow, style = "bold" }
+  highlights["@type.builtin"] = { fg = colors.magenta2, style = "bold" }
   highlights["@type.definition"] = { fg = colors.yellow }
   highlights["@type.qualifier"] = { fg = colors.purple }
 
-  highlights["@variable"] = { fg = colors.fg, style = config.styles.variables.style or "NONE" }
+  highlights["@variable"] = { fg = colors.fg_dark, style = config.styles.variables.style or "NONE" }
   highlights["@variable.builtin"] = { fg = colors.red, style = "bold" }
   highlights["@variable.member"] = { fg = colors.fg }
   highlights["@variable.parameter"] = { fg = colors.red }
@@ -118,4 +119,3 @@ function M.get_highlights(colors, config)
 end
 
 return M
-

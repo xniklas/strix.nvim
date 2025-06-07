@@ -24,9 +24,9 @@ local ret = {
   yellow = "#c19e50",
   terminal_black = "#221f2b",
   git = {
-    add = "#449dab",
-    change = "#6183bb",
-    delete = "#914c54",
+    add = "#39498c",
+    change = "#ad9a4d",
+    delete = "#892c46",
   },
 }
 return ret

@@ -22,13 +22,19 @@ This is a Neovim colorscheme plugin called "Strix" with comprehensive support fo
 - `lua/strix/treesitter.lua` - Treesitter highlight groups for enhanced syntax highlighting
 - `lua/strix/semantic_tokens.lua` - LSP semantic token highlights for supported language servers
 
-### Reference Files
-- `lua/strix/*_groups.txt` - Reference lists of highlight groups for each module
+### Reference Files  
+- `lua/strix/*_groups.txt` - Reference lists of highlight groups for each module (deleted files, used for development reference)
+
+### Module Integration
+- Highlights are loaded in sequence: base highlights → treesitter → semantic tokens
+- Each module uses `get_highlights(palette, opts)` function returning a table of group → highlight mappings
+- Empty highlight groups (like `@none`) are automatically skipped by the `set_highlight()` function
 
 ## Development Commands
 
 - **Code formatting**: `stylua .` (configured for 2-space indentation, 120-column width)
 - **Testing colorscheme**: Load via `:colorscheme strix-night` or `require("strix").load({ style = "night" })`
+- **Loading configuration**: Use `require("strix").load({ transparent = true, terminal_colors = false })` to test options
 
 ## Key Features
 

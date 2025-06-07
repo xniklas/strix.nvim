@@ -5,7 +5,8 @@ function M.get_highlights(colors, config)
 
   highlights["@lsp.type.boolean"] = { fg = colors.orange }
   highlights["@lsp.type.builtinType"] = { fg = colors.yellow, style = "bold" }
-  highlights["@lsp.type.comment"] = { fg = colors.comment, style = config.styles.comments.italic and "italic" or "NONE" }
+  highlights["@lsp.type.comment"] =
+    { fg = colors.comment, style = config.styles.comments.italic and "italic" or "NONE" }
   highlights["@lsp.type.decorator"] = { fg = colors.yellow }
   highlights["@lsp.type.deriveHelper"] = { fg = colors.cyan }
   highlights["@lsp.type.enum"] = { fg = colors.yellow }
@@ -51,3 +52,4 @@ function M.get_highlights(colors, config)
 end
 
 return M
+

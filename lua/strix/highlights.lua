@@ -107,7 +107,7 @@ function M.get_highlights(colors, config)
   highlights.Special = { fg = colors.blue }
   highlights.SpecialChar = { fg = colors.purple }
   highlights.Tag = { fg = colors.red }
-  highlights.Delimiter = { fg = colors.fg_dark }
+  highlights.Delimiter = { fg = colors.red1 }
   highlights.SpecialComment = { fg = colors.purple }
   highlights.Debug = { fg = colors.orange }
 
@@ -145,7 +145,7 @@ function M.get_highlights(colors, config)
   highlights.LspReferenceWrite = { bg = require("strix.colors").blend(colors.bg, colors.orange, 0.1) }
   highlights.LspSignatureActiveParameter = { fg = colors.yellow, style = "bold" }
   highlights.LspCodeLens = { fg = colors.comment }
-  highlights.LspInlayHint = { fg = colors.comment, bg = require("strix.colors").blend(colors.bg, colors.comment, 0.1) }
+  highlights.LspInlayHint = { fg = colors.purple, bg = require("strix.colors").blend(colors.bg, colors.purple, 0.1) }
   highlights.LspInfoBorder = { fg = colors.fg_gutter }
 
   -- Diagnostic Groups
@@ -210,6 +210,18 @@ function M.get_highlights(colors, config)
   -- Semantic Token Groups
   local semantic_highlights = require("strix.semantic_tokens").get_highlights(colors, config)
   for group, opts in pairs(semantic_highlights) do
+    highlights[group] = opts
+  end
+
+  -- Render Markdown Groups
+  local render_markdown_highlights = require("strix.render_markdown").get_highlights(colors, config)
+  for group, opts in pairs(render_markdown_highlights) do
+    highlights[group] = opts
+  end
+
+  -- Snacks.nvim Plugin Groups
+  local snacks_highlights = require("strix.snacks").get_highlights(colors, config)
+  for group, opts in pairs(snacks_highlights) do
     highlights[group] = opts
   end
 
