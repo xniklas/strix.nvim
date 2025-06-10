@@ -225,6 +225,18 @@ function M.get_highlights(colors, config)
     highlights[group] = opts
   end
 
+  -- LSP Kinds Groups
+  local kinds_highlights = require("strix.kinds").get_highlights(colors, config)
+  for group, opts in pairs(kinds_highlights) do
+    highlights[group] = opts
+  end
+
+  -- Blink Completion Groups
+  local blink_highlights = require("strix.blink").get_highlights(colors, config)
+  for group, opts in pairs(blink_highlights) do
+    highlights[group] = opts
+  end
+
   return highlights
 end
 

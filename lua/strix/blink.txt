@@ -1,0 +1,18 @@
+BlinkCmpDoc                 
+BlinkCmpDocBorder           
+BlinkCmpGhostText           
+BlinkCmpKindCodeium         
+BlinkCmpKindCopilot         
+BlinkCmpKindDefault         
+BlinkCmpKindSupermaven      
+BlinkCmpKindTabNine         
+BlinkCmpLabel               
+BlinkCmpLabelDeprecated     
+BlinkCmpLabelMatch          
+BlinkCmpMenu                
+BlinkCmpMenuBorder          
+BlinkCmpSignatureHelp       
+BlinkCmpSignatureHelpBorder 
+
+Here we add all the kinds from the kinds.lua file that will be created.
+ONLY AN EXAMPLE: require("strix.kinds").kinds(ret, "BlinkCmpKind%s")
