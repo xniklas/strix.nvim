@@ -14,8 +14,8 @@ function M.setup(c, config)
     ["@constant.macro"]      = { fg = c.flamingo },
     
     -- Modules / Invocations
-    ["@module"]              = { fg = c.yellow },
-    ["@module.builtin"]      = { fg = c.yellow, italic = true },
+    ["@module"]              = { fg = c.text },
+    ["@module.builtin"]      = { fg = c.text, italic = true },
     ["@label"]               = { fg = c.blue },
 
     -- Literals
@@ -30,9 +30,9 @@ function M.setup(c, config)
     ["@number.float"]        = { fg = c.lavender },
 
     -- Types
-    ["@type"]                = { fg = c.yellow },
-    ["@type.builtin"]        = { fg = c.yellow, italic = true },
-    ["@type.definition"]     = { fg = c.yellow },
+    ["@type"]                = { fg = c.mauve },
+    ["@type.builtin"]        = { fg = c.mauve, italic = true },
+    ["@type.definition"]     = { fg = c.mauve },
     ["@attribute"]           = { fg = c.peach },
     ["@property"]            = { fg = c.blue },
 
