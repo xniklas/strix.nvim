@@ -18,6 +18,11 @@ M.config = {
 		notify = true,
 		trouble = true,
 		indent_blankline = true,
+		which_key = true,
+		lazy = true,
+		dashboard = true,
+		mini = true,
+		illuminate = true,
 	},
 }
 
