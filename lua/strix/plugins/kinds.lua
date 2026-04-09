@@ -1,0 +1,60 @@
+local M = {}
+
+function M.setup(c, config)
+  return {
+    -- Auto-completion Dropdowns (nvim-cmp, blink.cmp)
+    CmpItemKindText          = { fg = c.text },
+    CmpItemKindMethod        = { fg = c.blue },
+    CmpItemKindFunction      = { fg = c.blue },
+    CmpItemKindConstructor   = { fg = c.blue },
+    CmpItemKindField         = { fg = c.sky },
+    CmpItemKindVariable      = { fg = c.text },
+    CmpItemKindClass         = { fg = c.yellow },
+    CmpItemKindInterface     = { fg = c.yellow },
+    CmpItemKindModule        = { fg = c.mauve },
+    CmpItemKindProperty      = { fg = c.sky },
+    CmpItemKindUnit          = { fg = c.green },
+    CmpItemKindValue         = { fg = c.peach },
+    CmpItemKindEnum          = { fg = c.yellow },
+    CmpItemKindKeyword       = { fg = c.mauve },
+    CmpItemKindSnippet       = { fg = c.teal },
+    CmpItemKindColor         = { fg = c.red },
+    CmpItemKindFile          = { fg = c.blue },
+    CmpItemKindReference     = { fg = c.red },
+    CmpItemKindFolder        = { fg = c.blue },
+    CmpItemKindEnumMember    = { fg = c.peach },
+    CmpItemKindConstant      = { fg = c.peach },
+    CmpItemKindStruct        = { fg = c.yellow },
+    CmpItemKindEvent         = { fg = c.yellow },
+    CmpItemKindOperator      = { fg = c.teal },
+    CmpItemKindTypeParameter = { fg = c.sky },
+    
+    -- Native LSP Format UI (Nvim 0.11+)
+    LspKindText          = { link = "CmpItemKindText" },
+    LspKindMethod        = { link = "CmpItemKindMethod" },
+    LspKindFunction      = { link = "CmpItemKindFunction" },
+    LspKindConstructor   = { link = "CmpItemKindConstructor" },
+    LspKindField         = { link = "CmpItemKindField" },
+    LspKindVariable      = { link = "CmpItemKindVariable" },
+    LspKindClass         = { link = "CmpItemKindClass" },
+    LspKindInterface     = { link = "CmpItemKindInterface" },
+    LspKindModule        = { link = "CmpItemKindModule" },
+    LspKindProperty      = { link = "CmpItemKindProperty" },
+    LspKindValue         = { link = "CmpItemKindValue" },
+    LspKindEnum          = { link = "CmpItemKindEnum" },
+    LspKindKeyword       = { link = "CmpItemKindKeyword" },
+    LspKindSnippet       = { link = "CmpItemKindSnippet" },
+    LspKindColor         = { link = "CmpItemKindColor" },
+    LspKindFile          = { link = "CmpItemKindFile" },
+    LspKindReference     = { link = "CmpItemKindReference" },
+    LspKindFolder        = { link = "CmpItemKindFolder" },
+    LspKindEnumMember    = { link = "CmpItemKindEnumMember" },
+    LspKindConstant      = { link = "CmpItemKindConstant" },
+    LspKindStruct        = { link = "CmpItemKindStruct" },
+    LspKindEvent         = { link = "CmpItemKindEvent" },
+    LspKindOperator      = { link = "CmpItemKindOperator" },
+    LspKindTypeParameter = { link = "CmpItemKindTypeParameter" },
+  }
+end
+
+return M

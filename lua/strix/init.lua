@@ -3,7 +3,9 @@ local M = {}
 M.config = {
 	transparent_background = false,
 	integrations = {
-		-- Extend this as we build plugin overrides (e.g., telescope, cmp, nvimtree)
+		treesitter = true,
+		semantic_tokens = true,
+		kinds = true,
 	},
 }
 
