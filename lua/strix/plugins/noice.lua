@@ -1,8 +1,8 @@
 local M = {}
 
 function M.setup(c, config)
-  -- Push Noice panels into the deepest crust so alerts pop
-  local bg = config.transparent_background and c.none or c.crust
+  -- Push Noice panels into a lighter elevated background
+  local bg = config.transparent_background and c.none or c.surface0
 
   return {
     NoiceCmdline           = { bg = bg },

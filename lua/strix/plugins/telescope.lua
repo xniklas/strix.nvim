@@ -2,8 +2,8 @@ local M = {}
 
 function M.setup(c, config)
   -- Separate prompt vs results layer background colors
-  local prompt_bg = config.transparent_background and c.none or c.surface0
-  local results_bg = config.transparent_background and c.none or c.mantle
+  local prompt_bg = config.transparent_background and c.none or c.surface1
+  local results_bg = config.transparent_background and c.none or c.surface0
 
   return {
     TelescopeBorder         = { fg = c.overlay0, bg = results_bg },

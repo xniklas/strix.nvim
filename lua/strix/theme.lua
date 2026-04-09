@@ -3,7 +3,7 @@ local M = {}
 function M.setup(c, config)
   -- Background logic for transparency toggles
   local bg = config.transparent_background and c.none or c.base
-  local float_bg = config.transparent_background and c.none or c.mantle
+  local float_bg = config.transparent_background and c.none or c.surface0
 
   local highlights = {
     -- Editor UI
@@ -23,7 +23,7 @@ function M.setup(c, config)
     IncSearch    = { fg = c.base, bg = c.yellow },
     MatchParen   = { fg = c.peach, bold = true },
     NonText      = { fg = c.overlay0 },
-    Pmenu        = { fg = c.text, bg = c.mantle },
+    Pmenu        = { fg = c.text, bg = float_bg },
     PmenuSel     = { fg = c.base, bg = c.teal },
     PmenuSbar    = { bg = c.surface1 },
     PmenuThumb   = { bg = c.overlay0 },

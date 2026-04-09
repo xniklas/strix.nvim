@@ -1,7 +1,7 @@
 local M = {}
 
 function M.setup(c, config)
-  local bg = config.transparent_background and c.none or c.crust
+  local bg = config.transparent_background and c.none or c.surface0
 
   return {
     NotifyERRORBorder = { fg = c.red, bg = bg },
