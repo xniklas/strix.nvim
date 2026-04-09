@@ -6,6 +6,11 @@ M.config = {
 		treesitter = true,
 		semantic_tokens = true,
 		kinds = true,
+		telescope = true,
+		neo_tree = true,
+		nvim_tree = true,
+		bufferline = true,
+		fzf = true,
 	},
 }
 
