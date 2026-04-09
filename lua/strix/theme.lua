@@ -68,10 +68,10 @@ function M.setup(c, config)
 
   -- Core diagnostic highlights
   local diagnostics = {
-    DiagnosticError = { fg = c.red },
-    DiagnosticWarn  = { fg = c.yellow },
-    DiagnosticInfo  = { fg = c.sky },
-    DiagnosticHint  = { fg = c.teal },
+    DiagnosticError = { fg = c.red, bg = c.red_bg },
+    DiagnosticWarn  = { fg = c.yellow, bg = c.yellow_bg },
+    DiagnosticInfo  = { fg = c.sky, bg = c.sky_bg },
+    DiagnosticHint  = { fg = c.teal, bg = c.teal_bg },
     DiagnosticUnderlineError = { sp = c.red, underline = true },
     DiagnosticUnderlineWarn  = { sp = c.yellow, underline = true },
     DiagnosticUnderlineInfo  = { sp = c.sky, underline = true },

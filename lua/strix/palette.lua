@@ -30,6 +30,12 @@ M.colors = {
   blue      = "#5c94e0",
   lavender  = "#92a4e6",
 
+  -- Extended Diagnostic Backgrounds (15% mix with base)
+  red_bg    = "#2A1E1E",
+  yellow_bg = "#292C1B",
+  sky_bg    = "#132D2F",
+  teal_bg   = "#0E2C27",
+
   none      = "NONE",
 }
 
