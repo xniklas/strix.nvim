@@ -11,6 +11,13 @@ M.config = {
 		nvim_tree = true,
 		bufferline = true,
 		fzf = true,
+		cmp = true,
+		blink = true,
+		gitsigns = true,
+		noice = true,
+		notify = true,
+		trouble = true,
+		indent_blankline = true,
 	},
 }
 
