@@ -4,62 +4,62 @@ function M.setup(c, config)
   return {
     -- Identifiers
     ["@variable"]            = { fg = c.text },
-    ["@variable.builtin"]    = { fg = c.cyan, italic = true },
+    ["@variable.builtin"]    = { fg = c.teal, italic = true },
     ["@variable.parameter"]  = { fg = c.flamingo },
-    ["@variable.member"]     = { fg = c.sky },
+    ["@variable.member"]     = { fg = c.blue },
     
     -- Constants
     ["@constant"]            = { fg = c.peach },
     ["@constant.builtin"]    = { fg = c.peach, bold = true },
-    ["@constant.macro"]      = { fg = c.pink },
+    ["@constant.macro"]      = { fg = c.flamingo },
     
     -- Modules / Invocations
-    ["@module"]              = { fg = c.mauve },
-    ["@module.builtin"]      = { fg = c.mauve, italic = true },
+    ["@module"]              = { fg = c.yellow },
+    ["@module.builtin"]      = { fg = c.yellow, italic = true },
     ["@label"]               = { fg = c.blue },
 
     -- Literals
-    ["@string"]              = { fg = c.green },
-    ["@string.documentation"]= { fg = c.green, italic = true },
-    ["@string.regexp"]       = { fg = c.sky },
-    ["@string.escape"]       = { fg = c.teal },
-    ["@character"]           = { fg = c.green },
-    ["@character.special"]   = { fg = c.teal },
-    ["@boolean"]             = { fg = c.peach, bold = true },
-    ["@number"]              = { fg = c.peach },
-    ["@number.float"]        = { fg = c.peach },
+    ["@string"]              = { fg = c.sky },
+    ["@string.documentation"]= { fg = c.sky, italic = true },
+    ["@string.regexp"]       = { fg = c.pink },
+    ["@string.escape"]       = { fg = c.flamingo },
+    ["@character"]           = { fg = c.sky },
+    ["@character.special"]   = { fg = c.flamingo },
+    ["@boolean"]             = { fg = c.lavender, bold = true },
+    ["@number"]              = { fg = c.lavender },
+    ["@number.float"]        = { fg = c.lavender },
 
     -- Types
-    ["@type"]                = { fg = c.sky },
-    ["@type.builtin"]        = { fg = c.sky, italic = true },
-    ["@type.definition"]     = { fg = c.sky },
-    ["@attribute"]           = { fg = c.yellow },
-    ["@property"]            = { fg = c.sky },
+    ["@type"]                = { fg = c.yellow },
+    ["@type.builtin"]        = { fg = c.yellow, italic = true },
+    ["@type.definition"]     = { fg = c.yellow },
+    ["@attribute"]           = { fg = c.peach },
+    ["@property"]            = { fg = c.blue },
 
     -- Functions
-    ["@function"]            = { fg = c.blue },
-    ["@function.builtin"]    = { fg = c.blue },
-    ["@function.macro"]      = { fg = c.pink },
-    ["@function.method"]     = { fg = c.blue },
-    ["@constructor"]         = { fg = c.blue },
+    ["@function"]            = { fg = c.teal },
+    ["@function.builtin"]    = { fg = c.teal },
+    ["@function.macro"]      = { fg = c.flamingo },
+    ["@function.method"]     = { fg = c.teal },
+    ["@constructor"]         = { fg = c.teal },
 
     -- Keywords
-    ["@keyword"]             = { fg = c.mauve, italic = true },
-    ["@keyword.coroutine"]   = { fg = c.mauve, italic = true },
-    ["@keyword.function"]    = { fg = c.mauve, italic = true },
-    ["@keyword.operator"]    = { fg = c.teal },
-    ["@keyword.import"]      = { fg = c.mauve },
-    ["@keyword.type"]        = { fg = c.mauve },
-    ["@keyword.modifier"]    = { fg = c.mauve, italic = true },
-    ["@keyword.repeat"]      = { fg = c.mauve, italic = true },
-    ["@keyword.return"]      = { fg = c.mauve, italic = true },
+    ["@keyword"]             = { fg = c.pink, italic = true },
+    ["@keyword.coroutine"]   = { fg = c.pink, italic = true },
+    ["@keyword.function"]    = { fg = c.pink, italic = true },
+    ["@keyword.operator"]    = { fg = c.sky },
+    ["@keyword.import"]      = { fg = c.pink },
+    ["@keyword.type"]        = { fg = c.pink },
+    ["@keyword.modifier"]    = { fg = c.pink, italic = true },
+    ["@keyword.repeat"]      = { fg = c.pink, italic = true },
+    ["@keyword.return"]      = { fg = c.pink, italic = true },
     ["@keyword.debug"]       = { fg = c.red, italic = true },
     ["@keyword.exception"]   = { fg = c.red, italic = true },
 
     -- Punctuation
     ["@punctuation.delimiter"] = { fg = c.subtext0 },
     ["@punctuation.bracket"]   = { fg = c.subtext0 },
-    ["@punctuation.special"]   = { fg = c.teal },
+    ["@punctuation.special"]   = { fg = c.sky },
 
     -- Comments & Notes
     ["@comment"]             = { fg = c.overlay2, italic = true },
